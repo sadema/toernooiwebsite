@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Card} from "../../components/card/card.data";
+import {Input} from "@angular/core/src/metadata/directives";
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import {Card} from "../../components/card/card.data";
 export class HomeComponent implements OnInit {
 
   cards: Array<Card> = new Array<Card>();
+  @Input() pagedata;
 
   constructor() {
     let card: Card = new Card();
