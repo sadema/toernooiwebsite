@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import {PageService} from "./pages/services/page.service";
 import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
+import {HeaderService} from "./components/header/header.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HeaderComponent } from './components/header/header.component';
     FormsModule,
     HttpModule
   ],
-  providers: [PageService,CardService],
+  providers: [PageService,CardService,HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
