@@ -10,9 +10,11 @@ export class CardService {
 
   public getContent(contentid: string): Observable<Response> {
     if (contentid === "1") {
-      return this.http.request("/app/components/content/card-poelindeling.json");
+      return this.http.request("/app/components/content/card-verenigingen.json");
     } else if (contentid === "2") {
       return this.http.request("/app/components/content/card-toernooiopening.json");
+    } else if (contentid === "3") {
+      return this.http.request("/app/components/content/card-pouleindeling.json");
     } else {
       return null;
     }

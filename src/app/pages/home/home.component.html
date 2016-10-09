@@ -1,5 +1,10 @@
 {{pagedata | json}}
 <div class="row">
+  <div class="col-xs-12">
+    <app-header></app-header>
+  </div>
+</div>
+<div class="row">
   <div *ngFor="let card of cards">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <app-card [card]="card"></app-card>
