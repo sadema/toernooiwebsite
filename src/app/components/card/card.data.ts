@@ -3,8 +3,14 @@
  */
 
 export class Card {
-  public title: string = '';
+  public contentid: string = "";
+  public title: string = "";
   public description: string = "";
 
-  constructor() {}
+  constructor(data?) {
+    if (data) {
+      this.title = data.title;
+      this.description = data.description;
+    }
+  }
 }

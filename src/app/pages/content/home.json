@@ -1,4 +1,6 @@
 {
   "pageid": "home",
-  "cards": []
+  "cardrefs": [
+    {"contentid": "1"},{"contentid": "2"}
+  ]
 }
