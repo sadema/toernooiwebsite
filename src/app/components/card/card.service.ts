@@ -10,11 +10,20 @@ export class CardService {
 
   public getContent(contentid: string): Observable<Response> {
     if (contentid === "1") {
-      return this.http.request("/app/components/content/card-verenigingen.json");
+      return this.http.request("/app/components/content/card-verenigingen.json")
+        .map(jsonData => {
+          return jsonData.json();
+        });
     } else if (contentid === "2") {
-      return this.http.request("/app/components/content/card-toernooiopening.json");
+      return this.http.request("/app/components/content/card-toernooiopening.json")
+        .map(jsonData => {
+          return jsonData.json();
+        });
     } else if (contentid === "3") {
-      return this.http.request("/app/components/content/card-pouleindeling.json");
+      return this.http.request("/app/components/content/card-pouleindeling.json")
+        .map(jsonData => {
+          return jsonData.json();
+        });
     } else {
       return null;
     }

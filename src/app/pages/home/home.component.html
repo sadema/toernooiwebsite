@@ -3,8 +3,8 @@
     <app-header [refid]="pagedata.headerref?.contentid"></app-header>
   </div>
 </div>
-<!--
 <div class="row">
-  <app-cardcontainer [changeNotifier]="onDataChange"></app-cardcontainer>
+  <div *ngFor="let cardref of pagedata.cardrefs">
+    <app-cardcontainer [cardref]="cardref"></app-cardcontainer>
+  </div>
 </div>
--->
