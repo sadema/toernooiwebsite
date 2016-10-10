@@ -12,12 +12,10 @@ import {Subject, BehaviorSubject} from "rxjs";
 })
 export class HomeComponent implements OnInit, OnChanges {
 
-  cards: Array<Card> = new Array<Card>();
   @Input() pagedata;
   onDataChange: Subject<Object> = new BehaviorSubject<Object>({});
-  // pagedataEvent: EventEmitter<Object> = new EventEmitter<Object>();
 
-  constructor(private cardService: CardService) {
+  constructor() {
   }
 
   ngOnInit() {
@@ -27,18 +25,7 @@ export class HomeComponent implements OnInit, OnChanges {
   ngOnChanges(changes: {[propName: string]: SimpleChange}) {
     console.log("changes: ", changes);
     console.log("changes: ", changes["pagedata"].currentValue);
-    // this.pagedataEvent.emit(changes["pagedata"].currentValue);
     this.onDataChange.next(changes["pagedata"].currentValue);
-    if (this.pagedata.cardrefs) {
-      for (let index in this.pagedata.cardrefs) {
-        this.cardService.getContent(this.pagedata.cardrefs[index].contentid)
-          .subscribe((resp: Response) => {
-            let data = resp.json();
-            let card: Card = new Card(data);
-            this.cards.push(card);
-          });
-      }
-    }
   }
 
 }

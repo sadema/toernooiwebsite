@@ -17,12 +17,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.changeNotifier.subscribe(pagedata => {
-      console.log("Pagedata on change: ", pagedata);
       if (pagedata.headerref) {
         this.headerService.getContent(pagedata.headerref.contentid)
           .subscribe((resp: Response) => {
             this.header = new Header(resp.json());
-            console.log("There is a header: ", this.header);
           });
       }
     });

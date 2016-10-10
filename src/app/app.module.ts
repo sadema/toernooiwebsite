@@ -10,13 +10,15 @@ import {PageService} from "./pages/services/page.service";
 import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
 import {HeaderService} from "./components/header/header.service";
+import { CardcontainerComponent } from './components/container/cardcontainer/cardcontainer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardcontainerComponent
   ],
   imports: [
     BrowserModule,
