@@ -11,6 +11,7 @@ import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
 import {HeaderService} from "./components/header/header.service";
 import { CardcontainerComponent } from './components/container/cardcontainer/cardcontainer.component';
+import { ImageComponent } from './components/image/image.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardcontainerComponent } from './components/container/cardcontainer/car
     CardComponent,
     HomeComponent,
     HeaderComponent,
-    CardcontainerComponent
+    CardcontainerComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

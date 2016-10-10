@@ -12,7 +12,6 @@ import {Subject, BehaviorSubject} from "rxjs";
 })
 export class AppComponent {
   title = 'app works!';
-  // data: Object = {};
   data: Subject<Object> = new BehaviorSubject<Object>({});
 
   constructor(private pageService: PageService) {

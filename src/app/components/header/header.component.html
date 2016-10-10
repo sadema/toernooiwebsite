@@ -1,3 +1,2 @@
 <p>Content met id: {{refid}}</p>
-<p>{{header.imageUrl}}</p>
-<img src="{{header.imageUrl}}" class="img-fluid" alt="header">
+<app-image [data]="header | async"></app-image>

@@ -3,6 +3,7 @@ import {Input} from "@angular/core/src/metadata/directives";
 import {HeaderService} from "./header.service";
 import {Response} from "@angular/http";
 import {Header} from "./header.data";
+import {Subject, BehaviorSubject} from "rxjs";
 
 @Component({
   selector: 'app-header',
@@ -11,8 +12,10 @@ import {Header} from "./header.data";
 })
 export class HeaderComponent implements OnInit, OnChanges {
 
-  header: Header = new Header();
+  // header: Header = new Header();
   @Input() refid;
+  header: Subject<Object> = new BehaviorSubject<Object>({});
+
   constructor(private headerService: HeaderService) { }
 
   ngOnInit() {
@@ -32,8 +35,8 @@ export class HeaderComponent implements OnInit, OnChanges {
       console.log("OnChanges refid finaly there!");
           this.headerService.getContent(this.refid)
             .subscribe((resp: Response) => {
-              this.header = new Header(resp.json());
-              console.log(this.header);
+              let header = new Header(resp.json());
+              this.header.next(header);
             });
     }
   }
