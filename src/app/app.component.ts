@@ -16,7 +16,6 @@ export class AppComponent {
 
   constructor(private pageService: PageService) {
     pageService.getContent("home")
-      .map((resp: Response) => resp.json())
       .subscribe(pagedata => {
         console.log("pagedata: ", pagedata);
         this.data.next(pagedata);

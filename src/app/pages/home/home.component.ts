@@ -11,24 +11,14 @@ import {Subject, BehaviorSubject} from "rxjs";
   styleUrls: ['./home.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements OnInit, OnChanges {
+export class HomeComponent implements OnInit {
 
   @Input() pagedata;
-  // onDataChange: Subject<Object> = new BehaviorSubject<Object>({});
 
   constructor() {
   }
 
   ngOnInit() {
-    // this.pagedata.subscribe(data => {
-    //   console.log("subscribe");
-    // })
-  }
-
-  ngOnChanges(changes: {[propName: string]: SimpleChange}) {
-    // console.log("changes: ", changes);
-    // console.log("changes: ", changes["pagedata"].currentValue);
-    // this.onDataChange.next(changes["pagedata"].currentValue);
   }
 
 }

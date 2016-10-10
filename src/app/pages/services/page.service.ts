@@ -9,7 +9,10 @@ export class PageService {
   }
 
   public getContent(pageid: string): Observable<Response> {
-    return this.http.request("/app/pages/content/home.json");
+    return this.http.request("/app/pages/content/home.json")
+      .map((resp: Response) => {
+        return resp.json();
+      });
   }
 
 }
