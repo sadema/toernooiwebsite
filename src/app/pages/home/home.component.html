@@ -1,9 +1,13 @@
-{{pagedata | json}}
+<p>home component</p>
+{{pagedata.pageid}}
+
 <div class="row">
   <div class="col-xs-12">
-    <app-header [changeNotifier]="onDataChange"></app-header>
+    <app-header [refid]="pagedata.headerref?.contentid"></app-header>
   </div>
 </div>
+<!--
 <div class="row">
   <app-cardcontainer [changeNotifier]="onDataChange"></app-cardcontainer>
 </div>
+-->
