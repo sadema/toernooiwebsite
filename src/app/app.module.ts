@@ -10,8 +10,12 @@ import {PageService} from "./pages/services/page.service";
 import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
 import {HeaderService} from "./components/header/header.service";
-import { CardcontainerComponent } from './components/container/cardcontainer/cardcontainer.component';
+import { CardRefComponent } from './components/cardref/cardref.component';
 import { ImageComponent } from './components/image/image.component';
+import { ClubsComponent } from './pages/clubs/clubs.component';
+import {AppRouterModule} from "./app.routes";
+import {APP_BASE_HREF} from "@angular/common";
+import { HomerefComponent } from './pages/homeref/homeref.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +23,18 @@ import { ImageComponent } from './components/image/image.component';
     CardComponent,
     HomeComponent,
     HeaderComponent,
-    CardcontainerComponent,
-    ImageComponent
+    CardRefComponent,
+    ImageComponent,
+    ClubsComponent,
+    HomerefComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRouterModule
   ],
-  providers: [PageService,CardService,HeaderService],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}, PageService,CardService,HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
