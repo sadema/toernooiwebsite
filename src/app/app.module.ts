@@ -10,12 +10,10 @@ import {PageService} from "./pages/services/page.service";
 import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
 import {HeaderService} from "./components/header/header.service";
-import { CardRefComponent } from './components/cardref/cardref.component';
 import { ImageComponent } from './components/image/image.component';
 import { ClubsComponent } from './pages/clubs/clubs.component';
 import {AppRouterModule} from "./app.routes";
 import {APP_BASE_HREF} from "@angular/common";
-import { HomerefComponent } from './pages/homeref/homeref.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +21,8 @@ import { HomerefComponent } from './pages/homeref/homeref.component';
     CardComponent,
     HomeComponent,
     HeaderComponent,
-    CardRefComponent,
     ImageComponent,
-    ClubsComponent,
-    HomerefComponent
+    ClubsComponent
   ],
   imports: [
     BrowserModule,

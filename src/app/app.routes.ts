@@ -4,7 +4,7 @@
 
 import {Routes, RouterModule} from "@angular/router";
 import {ClubsComponent} from "./pages/clubs/clubs.component";
-import {HomerefComponent} from "./pages/homeref/homeref.component";
+import {HomeComponent} from "./pages/home/home.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -14,7 +14,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'home',
-    component: HomerefComponent
+    component: HomeComponent
   },
   {
     path: 'verenigingen',

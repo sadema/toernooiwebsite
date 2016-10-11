@@ -12,7 +12,7 @@ import {Subject, BehaviorSubject} from "rxjs";
 })
 export class HeaderComponent implements OnInit, OnChanges {
 
-  @Input() refid;
+  @Input() ref;
   header: Subject<Object> = new BehaviorSubject<Object>({});
 
   constructor(private headerService: HeaderService) {
@@ -22,8 +22,8 @@ export class HeaderComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    if (this.refid) {
-      this.headerService.getContent(this.refid)
+    if (this.ref.contentid) {
+      this.headerService.getContent(this.ref.contentid)
         .subscribe((data) => {
           this.header.next(new Header(data));
         });

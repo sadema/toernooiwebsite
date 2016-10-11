@@ -11,7 +11,6 @@ import {Subject, BehaviorSubject} from "rxjs";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'app works!';
 
   constructor() {
   }

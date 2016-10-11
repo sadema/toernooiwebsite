@@ -5,6 +5,7 @@ import {CardService} from "../../components/card/card.service";
 import {Response} from "@angular/http";
 import {Subject, BehaviorSubject} from "rxjs";
 import {PageService} from "../services/page.service";
+import {Header} from "../../components/header/header.data";
 
 @Component({
   selector: 'app-home',
@@ -13,12 +14,19 @@ import {PageService} from "../services/page.service";
 })
 export class HomeComponent implements OnInit {
 
-  @Input() pagedata;
+  headerref: Subject<Object> = new BehaviorSubject<Object>("");
+  cardrefs: Subject<Object[]> = new BehaviorSubject<Object[]>(new Array<Object>());
 
-  constructor() {
+  constructor(private pageService: PageService) {
   }
 
   ngOnInit() {
+    this.pageService.getContent("home")
+      .subscribe(pagedata => {
+        console.log("pagedata: ", pagedata);
+        this.headerref.next(pagedata.headerref);
+        this.cardrefs.next(pagedata.cardrefs);
+      });
   }
 
 }
