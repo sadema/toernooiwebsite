@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('App: Kristalbootstrap3', () => {
+describe('App: Toernooiwebsite', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [

@@ -12,6 +12,7 @@ export class TemplateComponent implements OnInit {
 
   pageid: string;
   headerref: Subject<Object> = new BehaviorSubject<Object>({});
+  intro: Subject<Object> = new BehaviorSubject<Object>({});
   cardrefs: Subject<Object[]> = new BehaviorSubject<Object[]>(new Array<Object>());
 
   constructor(private route: ActivatedRoute, private pageService: PageService) {
@@ -21,8 +22,9 @@ export class TemplateComponent implements OnInit {
       this.pageService.getContent(this.pageid)
         .subscribe(pagedata => {
           console.log("pagedata: ", pagedata);
-          this.headerref.next(pagedata.headerref);
-          this.cardrefs.next(pagedata.cardrefs);
+          this.headerref.next(pagedata.headerref || {});
+          this.intro.next(pagedata.intro || {});
+          this.cardrefs.next(pagedata.cardrefs || {});
         });
     })
   }

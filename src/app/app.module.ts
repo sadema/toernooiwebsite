@@ -15,6 +15,7 @@ import { ClubsComponent } from './pages/clubs/clubs.component';
 import {AppRouterModule} from "./app.routes";
 import {APP_BASE_HREF} from "@angular/common";
 import { TemplateComponent } from './pages/template/template.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TemplateComponent } from './pages/template/template.component';
     HeaderComponent,
     ImageComponent,
     ClubsComponent,
-    TemplateComponent
+    TemplateComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
