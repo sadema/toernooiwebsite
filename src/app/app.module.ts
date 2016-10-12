@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
-import { HomeComponent } from './pages/home/home.component';
 import {PageService} from "./pages/services/page.service";
 import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
@@ -21,7 +20,6 @@ import { IntroComponent } from './components/intro/intro.component';
   declarations: [
     AppComponent,
     CardComponent,
-    HomeComponent,
     HeaderComponent,
     ImageComponent,
     ClubsComponent,

@@ -1,5 +1,4 @@
 import {Component, OnInit, Input, OnChanges} from '@angular/core';
-import {Card} from "./card.data";
 import {BehaviorSubject, Subject} from "rxjs";
 import {CardService} from "./card.service";
 
@@ -10,7 +9,7 @@ import {CardService} from "./card.service";
 })
 export class CardComponent implements OnInit, OnChanges {
 
-  card: Subject<Card> = new BehaviorSubject<Card>(new Card());
+  card: Subject<Object> = new BehaviorSubject<Object>({});
   @Input() ref;
 
   constructor(private cardService: CardService) { }
@@ -21,7 +20,7 @@ export class CardComponent implements OnInit, OnChanges {
   ngOnChanges() {
     this.cardService.getContent(this.ref.contentid)
       .subscribe(card => {
-        this.card.next(new Card(card));
+        this.card.next(card);
       })
   }
 }

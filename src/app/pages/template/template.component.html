@@ -4,9 +4,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
-    <app-intro [data]="intro | async"></app-intro>
-  </div>
+  <app-intro [data]="intro | async"></app-intro>
 </div>
 <div class="row">
   <div *ngFor="let cardref of cardrefs | async">

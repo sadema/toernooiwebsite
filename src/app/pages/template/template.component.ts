@@ -22,9 +22,9 @@ export class TemplateComponent implements OnInit {
       this.pageService.getContent(this.pageid)
         .subscribe(pagedata => {
           console.log("pagedata: ", pagedata);
-          this.headerref.next(pagedata.headerref || {});
-          this.intro.next(pagedata.intro || {});
-          this.cardrefs.next(pagedata.cardrefs || {});
+          this.headerref.next(pagedata.headerref);
+          this.intro.next(pagedata.intro);
+          this.cardrefs.next(pagedata.cardrefs);
         });
     })
   }
