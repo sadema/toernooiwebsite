@@ -14,7 +14,7 @@ import {Header} from "../../components/header/header.data";
 })
 export class HomeComponent implements OnInit {
 
-  headerref: Subject<Object> = new BehaviorSubject<Object>("");
+  headerref: Subject<Object> = new BehaviorSubject<Object>({});
   cardrefs: Subject<Object[]> = new BehaviorSubject<Object[]>(new Array<Object>());
 
   constructor(private pageService: PageService) {

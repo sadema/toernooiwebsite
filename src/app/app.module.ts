@@ -14,6 +14,7 @@ import { ImageComponent } from './components/image/image.component';
 import { ClubsComponent } from './pages/clubs/clubs.component';
 import {AppRouterModule} from "./app.routes";
 import {APP_BASE_HREF} from "@angular/common";
+import { TemplateComponent } from './pages/template/template.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {APP_BASE_HREF} from "@angular/common";
     HomeComponent,
     HeaderComponent,
     ImageComponent,
-    ClubsComponent
+    ClubsComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,

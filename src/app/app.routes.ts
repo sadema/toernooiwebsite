@@ -3,8 +3,7 @@
  */
 
 import {Routes, RouterModule} from "@angular/router";
-import {ClubsComponent} from "./pages/clubs/clubs.component";
-import {HomeComponent} from "./pages/home/home.component";
+import {TemplateComponent} from "./pages/template/template.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -13,13 +12,13 @@ export const APP_ROUTES: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: ':pageid',
+    component: TemplateComponent
   },
-  {
-    path: 'verenigingen',
-    component: ClubsComponent
-  },
+  // {
+  //   path: 'verenigingen',
+  //   component: ClubsComponent
+  // },
   {
     path: '**',
     redirectTo: 'home'
