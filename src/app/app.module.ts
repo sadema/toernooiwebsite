@@ -17,6 +17,9 @@ import { TemplateComponent } from './pages/template/template.component';
 import { IntroComponent } from './components/intro/intro.component';
 import {PageResolve} from "./pages/page-resolve";
 import { ClubListComponent } from './components/club-list/club-list.component';
+import { TeamListComponent } from './components/team-list/team-list.component';
+import { ClubComponent } from './components/club/club.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ClubListComponent } from './components/club-list/club-list.component';
     ClubsComponent,
     TemplateComponent,
     IntroComponent,
-    ClubListComponent
+    ClubListComponent,
+    TeamListComponent,
+    ClubComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
