@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from "@angular/http";
 import {Observable} from "rxjs";
+import {Page} from "../page.model";
 
 @Injectable()
 export class PageService {
@@ -8,24 +9,22 @@ export class PageService {
   constructor(private http: Http) {
   }
 
-  public getContent(pageid: string): Observable<any> {
+  public getContent(pageid: string): Observable<Page> {
+    console.log("pageid: ", pageid);
+    let url: string;
     if (pageid === "home") {
-      return this.http.request("/app/pages/content/home.json")
-        .map((resp: Response) => {
-          return resp.json();
-        });
+      url = "/app/pages/content/home.json";
     } else if (pageid === "opening") {
-      return this.http.request("/app/pages/content/opening.json")
-        .map((resp: Response) => {
-          return resp.json();
-        });
+      url = "/app/pages/content/opening.json";
     } else if (pageid === "verenigingen") {
-      return this.http.request("/app/pages/content/home.json")
-        .map((resp: Response) => {
-          return resp.json();
-        });
+      url = "/app/pages/content/verenigingen.json";
     }
-  }
-
-
+    return Observable.create(observer => {
+        this.http.request(url)
+          .subscribe(data => {
+            observer.next(data.json());
+            observer.complete();
+          });
+      });
+  };
 }

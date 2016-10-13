@@ -1,0 +1,7 @@
+{
+  "pageid": "verenigingen",
+  "headerref": {"contentid": "11"},
+  "cardrefs": [
+    {"contentid": "1"},{"contentid": "2"},{"contentid": "3"}
+  ]
+}

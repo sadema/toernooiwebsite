@@ -4,16 +4,20 @@
 
 import {Routes, RouterModule} from "@angular/router";
 import {TemplateComponent} from "./pages/template/template.component";
+import {PageResolve} from "./pages/page-resolve";
 
 export const APP_ROUTES: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'page/home',
     pathMatch: 'full'
   },
   {
-    path: ':pageid',
-    component: TemplateComponent
+    path: 'page/:pageid',
+    component: TemplateComponent,
+    resolve: {
+      page: PageResolve
+    }
   },
   // {
   //   path: 'verenigingen',
@@ -21,7 +25,7 @@ export const APP_ROUTES: Routes = [
   // },
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: 'page/home'
   }
 ];
 

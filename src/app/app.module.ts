@@ -15,6 +15,7 @@ import {AppRouterModule} from "./app.routes";
 import {APP_BASE_HREF} from "@angular/common";
 import { TemplateComponent } from './pages/template/template.component';
 import { IntroComponent } from './components/intro/intro.component';
+import {PageResolve} from "./pages/page-resolve";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,12 @@ import { IntroComponent } from './components/intro/intro.component';
     HttpModule,
     AppRouterModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/'}, PageService,CardService,HeaderService],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'},
+    PageService,
+    PageResolve,
+    CardService,
+    HeaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

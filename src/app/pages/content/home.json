@@ -3,5 +3,13 @@
   "headerref": {"contentid": "11"},
   "cardrefs": [
     {"contentid": "1"},{"contentid": "2"},{"contentid": "3"}
+  ],
+  "clubs": [
+    {"club": {"name": "Groen Wit", "city": "Apeldoorn"}},
+    {"club": {"name": "Victoria Boys", "city": "Apeldoorn"}},
+    {"club": {"name": "Robur et Velocitas", "city": "Apeldoorn"}},
+    {"club": {"name": "Voorst", "city": "Voorst"}},
+    {"club": {"name": "CSV Apeldoorn", "city": "Apeldoorn"}},
+    {"club": {"name": "Voorwaarts", "city": "Twello"}}
   ]
 }

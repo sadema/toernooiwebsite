@@ -1,15 +1,16 @@
-<div class="row">
+<div *ngIf="page.headerref" class="row" style="margin-top: 3.8rem;">
   <div class="col-xs-12">
-    <app-header [ref]="headerref | async"></app-header>
+    <app-header [ref]="page.headerref"></app-header>
   </div>
 </div>
-<div class="row">
-  <app-intro [data]="intro | async"></app-intro>
+<div *ngIf="page.intro" class="row" style="margin-top: 1.5rem;">
+  <app-intro [data]="page.intro"></app-intro>
 </div>
-<div class="row">
-  <div *ngFor="let cardref of cardrefs | async">
+<div *ngIf="page.cardrefs" class="row" style="margin-top: 1.5rem;">
+  <div *ngFor="let cardref of page.cardrefs">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <app-card [ref]="cardref"></app-card>
     </div>
   </div>
 </div>
+
