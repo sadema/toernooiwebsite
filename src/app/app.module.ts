@@ -16,6 +16,7 @@ import {APP_BASE_HREF} from "@angular/common";
 import { TemplateComponent } from './pages/template/template.component';
 import { IntroComponent } from './components/intro/intro.component';
 import {PageResolve} from "./pages/page-resolve";
+import { ClubListComponent } from './components/club-list/club-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {PageResolve} from "./pages/page-resolve";
     ImageComponent,
     ClubsComponent,
     TemplateComponent,
-    IntroComponent
+    IntroComponent,
+    ClubListComponent
   ],
   imports: [
     BrowserModule,
