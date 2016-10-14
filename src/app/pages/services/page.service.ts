@@ -18,6 +18,8 @@ export class PageService {
       url = "/app/pages/content/opening.json";
     } else if (pageid === "verenigingen") {
       url = "/app/pages/content/verenigingen.json";
+    } else if (pageid === "poules") {
+      url = "/app/pages/content/poules.json";
     }
     return Observable.create(observer => {
         this.http.request(url)

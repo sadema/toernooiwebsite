@@ -18,4 +18,9 @@
     <app-club-list [list]="page.clubs"></app-club-list>
   </div>
 </div>
+<div *ngIf="page.poules" class="row" style="margin-top: 1.5rem;">
+  <div class="col-xs-12">
+    <app-poule-list [list]="page.poules"></app-poule-list>
+  </div>
+</div>
 

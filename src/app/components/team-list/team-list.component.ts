@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Input} from "@angular/core/src/metadata/directives";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-team-list',
@@ -9,10 +10,15 @@ import {Input} from "@angular/core/src/metadata/directives";
 export class TeamListComponent implements OnInit {
 
   @Input() list;
+  @Input() club;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  teamClicked(item) {
+    console.log("clubteam: ", this.club, item);
+    this.router.navigate(['page', 'poules']);
+  }
 }

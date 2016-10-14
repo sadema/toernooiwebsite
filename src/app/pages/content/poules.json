@@ -1,0 +1,88 @@
+{
+  "pageid": "poules",
+  "headerref": {
+    "contentid": "11"
+  },
+  "poules": [
+    {
+      "poule-number": "1",
+      "teams": [
+        {
+          "team-name": "JO11-6",
+          "club-name": "Robur et Velocitas",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-6",
+          "club-name": "Groen Wit",
+          "city": "Apeldoorn"
+        }
+      ]
+    },
+    {
+      "poule-number": "2",
+      "teams": [
+        {
+          "team-name": "JO11-12",
+          "club-name": "Robur et Velocitas",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-11",
+          "club-name": "Groen Wit",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-6",
+          "club-name": "CSV Apeldoorn",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-1",
+          "club-name": "Victoria Boys",
+          "city": "Apeldoorn"
+        }
+      ]
+    },
+    {
+      "poule-number": "3",
+      "teams": [
+        {
+          "team-name": "JO11-10",
+          "club-name": "Groen Wit",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-7",
+          "club-name": "CSV Apeldoorn",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-5",
+          "club-name": "Robur et Velocitas",
+          "city": "Apeldoorn"
+        }
+      ]
+    },
+    {
+      "poule-number": "4",
+      "teams": [
+        {
+          "team-name": "JO11-6",
+          "club-name": "Voorwaarts",
+          "city": "Twello"
+        },
+        {
+          "team-name": "JO11-14",
+          "club-name": "Robur et Velocitas",
+          "city": "Apeldoorn"
+        },
+        {
+          "team-name": "JO11-1",
+          "club-name": "Voorst",
+          "city": "Voorst"
+        }
+      ]
+    }
+  ]
+}

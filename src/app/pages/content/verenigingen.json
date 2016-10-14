@@ -1,12 +1,92 @@
 {
   "pageid": "verenigingen",
-  "headerref": {"contentid": "11"},
+  "headerref": {
+    "contentid": "11"
+  },
   "clubs": [
-    {"club": {"name": "Groen Wit", "city": "Apeldoorn"}},
-    {"club": {"name": "Victoria Boys", "city": "Apeldoorn"}},
-    {"club": {"name": "Robur et Velocitas", "city": "Apeldoorn"}},
-    {"club": {"name": "Voorst", "city": "Voorst"}},
-    {"club": {"name": "CSV Apeldoorn", "city": "Apeldoorn"}},
-    {"club": {"name": "Voorwaarts", "city": "Twello"}}
+    {
+      "name": "Groen Wit",
+      "city": "Apeldoorn",
+      "teams": [
+        {
+          "name": "JO11-6",
+          "poule": "1"
+        },
+        {
+          "name": "JO11-10",
+          "poule": "3"
+        },
+        {
+          "name": "JO11-11",
+          "poule": "2"
+        }
+      ]
+    },
+    {
+      "name": "Victoria Boys",
+      "city": "Apeldoorn",
+      "teams": [
+        {
+          "name": "JO11-1",
+          "poule": "1"
+        }
+      ]
+    },
+    {
+      "name": "Robur et Velocitas",
+      "city": "Apeldoorn",
+      "teams": [
+        {
+          "name": "JO11-5",
+          "poule": "3"
+        },
+        {
+          "name": "JO11-6",
+          "poule": "1"
+        },
+        {
+          "name": "JO11-12",
+          "poule": "2"
+        },
+        {
+          "name": "JO11-14",
+          "poule": "4"
+        }
+      ]
+    },
+    {
+      "name": "Voorst",
+      "city": "Voorst",
+      "teams": [
+        {
+          "name": "JO11-1",
+          "poule": "3"
+        }
+      ]
+    },
+    {
+      "name": "CSV Apeldoorn",
+      "city": "Apeldoorn",
+      "teams": [
+        {
+          "name": "JO11-6",
+          "poule": "2"
+        },
+        {
+          "name": "JO11-7",
+          "poule": "3"
+        }
+      ]
+    },
+    {
+      "name": "Voorwaarts",
+      "city": "Twello",
+      "teams": [
+        {
+          "name": "JO11-6",
+          "poule": "4"
+        }
+      ]
+    }
   ]
 }

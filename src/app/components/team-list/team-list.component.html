@@ -1,3 +1,12 @@
-<li class="list-group-item" *ngFor="let item of list">
-  <app-team [content]="item"></app-team>
-</li>
+<table class="table table-hover">
+  <thead class="thead-default">
+  <tr>
+    <th>#</th>
+    <th>Team</th>
+    <th>Poule</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list; let index = index" [app-team]="item" [index]="index+1" (click)="teamClicked(item)"></tr>
+  </tbody>
+</table>

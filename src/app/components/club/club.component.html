@@ -1,5 +1,5 @@
-{{content.club.name}} {{content.club.city}}
-<ul class="list-group">
-  <app-team-list [list]="content.club.teams"></app-team-list>
-</ul>
+<h6>{{content.name}} uit {{content.city}}</h6>
+<div class="row">
+  <app-team-list [club]="content.name" [list]="content.teams"></app-team-list>
+</div>
 

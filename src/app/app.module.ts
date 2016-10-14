@@ -20,6 +20,7 @@ import { ClubListComponent } from './components/club-list/club-list.component';
 import { TeamListComponent } from './components/team-list/team-list.component';
 import { ClubComponent } from './components/club/club.component';
 import { TeamComponent } from './components/team/team.component';
+import { PouleListComponent } from './components/poule-list/poule-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TeamComponent } from './components/team/team.component';
     ClubListComponent,
     TeamListComponent,
     ClubComponent,
-    TeamComponent
+    TeamComponent,
+    PouleListComponent
   ],
   imports: [
     BrowserModule,
