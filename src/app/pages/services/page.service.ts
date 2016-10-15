@@ -13,13 +13,13 @@ export class PageService {
     console.log("pageid: ", pageid);
     let url: string;
     if (pageid === "home") {
-      url = "/app/pages/content/home.json";
+      url = "/assets/content/pages/home.json";
     } else if (pageid === "opening") {
-      url = "/app/pages/content/opening.json";
+      url = "/assets/content/pages/opening.json";
     } else if (pageid === "verenigingen") {
-      url = "/app/pages/content/verenigingen.json";
+      url = "/assets/content/pages/verenigingen.json";
     } else if (pageid === "poules") {
-      url = "/app/pages/content/poules.json";
+      url = "/assets/content/pages/poules.json";
     }
     return Observable.create(observer => {
         this.http.request(url)

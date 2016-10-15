@@ -10,7 +10,6 @@ import {CardService} from "./components/card/card.service";
 import { HeaderComponent } from './components/header/header.component';
 import {HeaderService} from "./components/header/header.service";
 import { ImageComponent } from './components/image/image.component';
-import { ClubsComponent } from './pages/clubs/clubs.component';
 import {AppRouterModule} from "./app.routes";
 import {APP_BASE_HREF} from "@angular/common";
 import { TemplateComponent } from './pages/template/template.component';
@@ -31,7 +30,6 @@ import { PouleteamComponent } from './components/pouleteam/pouleteam.component';
     CardComponent,
     HeaderComponent,
     ImageComponent,
-    ClubsComponent,
     TemplateComponent,
     IntroComponent,
     ClubListComponent,
