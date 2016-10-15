@@ -21,6 +21,9 @@ import { TeamListComponent } from './components/team-list/team-list.component';
 import { ClubComponent } from './components/club/club.component';
 import { TeamComponent } from './components/team/team.component';
 import { PouleListComponent } from './components/poule-list/poule-list.component';
+import { PouleComponent } from './components/poule/poule.component';
+import { PouleteamListComponent } from './components/pouleteam-list/pouleteam-list.component';
+import { PouleteamComponent } from './components/pouleteam/pouleteam.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { PouleListComponent } from './components/poule-list/poule-list.component
     TeamListComponent,
     ClubComponent,
     TeamComponent,
-    PouleListComponent
+    PouleListComponent,
+    PouleComponent,
+    PouleteamListComponent,
+    PouleteamComponent
   ],
   imports: [
     BrowserModule,
