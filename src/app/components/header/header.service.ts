@@ -8,7 +8,7 @@ export class HeaderService {
   constructor(private http: Http) { }
 
   public getContent(contentid: string): Observable<Response> {
-    return this.http.request("/app/components/content/header-home.json")
+    return this.http.request("/assets/content/components/header-home.json")
       .map(jsonData => {
         return jsonData.json();
       });

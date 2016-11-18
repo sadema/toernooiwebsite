@@ -8,7 +8,8 @@ import {Input} from "@angular/core/src/metadata/directives";
 })
 export class PouleteamListComponent implements OnInit {
 
-  @Input() list;
+  @Input() clubs;
+  @Input() poulenr;
 
   constructor() { }
 

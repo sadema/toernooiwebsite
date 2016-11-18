@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, OnChanges} from '@angular/core';
 import {Input} from "@angular/core/src/metadata/directives";
+import {PouleteamPipe} from "./pouleteam.pipe";
 
 @Component({
   selector: '[app-pouleteam]',
@@ -8,8 +9,9 @@ import {Input} from "@angular/core/src/metadata/directives";
 })
 export class PouleteamComponent implements OnInit {
 
-  @Input('app-pouleteam') content;
+  @Input('app-pouleteam') club;
   @Input() index;
+  @Input() poulenr;
 
   constructor() { }
 

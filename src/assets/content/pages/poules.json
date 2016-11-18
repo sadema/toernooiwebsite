@@ -3,6 +3,7 @@
   "headerref": {
     "contentid": "11"
   },
+  "poules_url": "http://localhost:5984/toernooi-db/_design/deelnemers/_view/poules",
   "poules": [
     {
       "poule": "1",

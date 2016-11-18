@@ -1,5 +1,5 @@
 <div class="list-group">
-  <div class="list-group-item" *ngFor="let item of list">
+  <div class="list-group-item" *ngFor="let item of list | async">
     <app-club [content]="item"></app-club>
   </div>
 </div>

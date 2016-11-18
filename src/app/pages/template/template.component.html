@@ -13,14 +13,14 @@
     </div>
   </div>
 </div>
-<div *ngIf="page.clubs" class="row" style="margin-top: 1.5rem;">
+<div *ngIf="page.clubs_url" class="row" style="margin-top: 1.5rem;">
   <div class="col-xs-12">
-    <app-club-list [list]="page.clubs"></app-club-list>
+    <app-club-list [clubs_url]="page.clubs_url"></app-club-list>
   </div>
 </div>
-<div *ngIf="page.poules" class="row" style="margin-top: 1.5rem;">
+<div *ngIf="page.poules_url" class="row" style="margin-top: 1.5rem;">
   <div class="col-xs-12">
-    <app-poule-list [list]="page.poules"></app-poule-list>
+    <app-poule-list [poules_url]="page.poules_url"></app-poule-list>
   </div>
 </div>
 

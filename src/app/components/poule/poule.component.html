@@ -1,4 +1,4 @@
-<h6>Poule: {{content.poule}}</h6>
+<h6>Poule: {{poule.poulenr}}</h6>
 <div class="row">
-  <app-pouleteam-list [list]="content.teams"></app-pouleteam-list>
+  <app-pouleteam-list [clubs]="poule.clubs" [poulenr]="poule.poulenr"></app-pouleteam-list>
 </div>

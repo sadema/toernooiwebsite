@@ -8,7 +8,7 @@ import {Input} from "@angular/core/src/metadata/directives";
 })
 export class PouleComponent implements OnInit {
 
-  @Input() content;
+  @Input() poule;
 
   constructor() { }
 

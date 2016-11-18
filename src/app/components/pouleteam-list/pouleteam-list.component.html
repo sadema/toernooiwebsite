@@ -3,10 +3,12 @@
   <tr>
     <th>#</th>
     <th>Vereniging</th>
+    <th>Plaats</th>
     <th>Team</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let item of list; let index = index" [app-pouleteam]="item" [index]="index+1" (click)="teamClicked(item)"></tr>
+    <tr *ngFor="let club of clubs; let index = index" [app-pouleteam]="club" [index]="index+1" [poulenr]="poulenr" (click)="teamClicked(club)">
+    </tr>
   </tbody>
 </table>

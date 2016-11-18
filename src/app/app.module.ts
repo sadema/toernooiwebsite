@@ -23,6 +23,9 @@ import { PouleListComponent } from './components/poule-list/poule-list.component
 import { PouleComponent } from './components/poule/poule.component';
 import { PouleteamListComponent } from './components/pouleteam-list/pouleteam-list.component';
 import { PouleteamComponent } from './components/pouleteam/pouleteam.component';
+import {ClubService} from "./components/club/club.service";
+import {PouleService} from "./components/poule-list/poule.service";
+import {PouleteamPipe} from "./components/pouleteam/pouleteam.pipe";
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { PouleteamComponent } from './components/pouleteam/pouleteam.component';
     PouleListComponent,
     PouleComponent,
     PouleteamListComponent,
-    PouleteamComponent
+    PouleteamComponent,
+    PouleteamPipe
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { PouleteamComponent } from './components/pouleteam/pouleteam.component';
     PageService,
     PageResolve,
     CardService,
-    HeaderService
+    HeaderService,
+    ClubService,
+    PouleService
   ],
   bootstrap: [AppComponent]
 })
