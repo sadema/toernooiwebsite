@@ -1,0 +1,12 @@
+version: "2"
+services:
+  website:
+    image: sadema/toernooiwebsite:0.11-dev
+    ports:
+      - "8585:80"
+    depends_on:
+      - database
+  database:
+    image: sadema/couchdb
+    ports:
+      - "5984:5984"

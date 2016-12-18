@@ -3,5 +3,5 @@
   "headerref": {
     "contentid": "11"
   },
-  "clubs_url": "http://localhost:5984/toernooi-db/_design/deelnemers/_view/clubs"
+  "clubs_url": "/toernooi-db/_design/deelnemers/_view/clubs"
 }
